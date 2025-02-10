@@ -6,236 +6,105 @@ import {
   NSNLogo,
   ParabolLogo,
 } from "@/images/logos";
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon, } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+  name: "Martina Fernández Santana",
+  initials: "MFS",
+  location: "CABA, Argentina",
+  locationLink: "https://maps.app.goo.gl/GKGq6euUG3r1biMFA",
   about:
-    "Detail-oriented Full Stack Engineer dedicated to building high-quality products.",
+    "Full Stack Engineer",
   summary: (
     <>
-      Frontend-focused Full Stack Engineer specializing in high-performance
-      React applications, scalable Node.js services, and real-time collaboration
-      systems. Experienced in technical architecture design and remote team
-      leadership.
+      Soy una desarrolladora web en busca de mi primera experiencia laboral en el area del desarrollo de software. Recientemente finalicé un bootcamp de Full Stack Engineer el cual me permitió consolidar habilidades fundamentales en el desarrollo de software.
+
+Me considero una persona comprometida, con una gran capacidad de aprendizaje y una actitud adaptativa frente a los desafíos. Estoy entusiasmada por seguir creciendo profesionalmente, aprender junto a un equipo y contribuir al éxito de proyectos innovadores.
+
     </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  avatarUrl: "https://avatars.githubusercontent.com/u/147435041?s=96&v=4",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "contacto@martinafernadez.com",
+    tel: "2235903726",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/martina556",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/martina-fernandez-683374336/",
         icon: LinkedInIcon,
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: XIcon,
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "Educación IT",
+      degree: "Full Stack Engineer",
+      start: "Febrero 2024",
+      end: "Octubre 2024",
     },
   ],
   work: [
     {
-      company: "Film.io",
-      link: "https://film.io",
-      badges: ["Remote", "React", "Next.js", "TypeScript", "Node.js"],
-      title: "Software Architect",
-      logo: ConsultlyLogo,
-      start: "2024",
-      end: null,
+      company: "GML",
+      badges: ["Remote", "CRM", "Database Systems",],
+      title: "Portability Advisor",
+      start: "Junio 2024",
+      end: "Diciembre 2024",
       description: (
         <>
-          Leading technical architecture of a blockchain-based film funding
-          platform.
+          Gestionando la portabilidad de clientes en un call center mediante llamadas telefónicas.
           <ul className="list-inside list-disc">
             <li>
-              Architecting migration from CRA to Next.js for improved
-              performance, SEO, and DX
+            Realizando tareas administrativas utilizando sistemas de bases de datos de clientes y CRM para registrar ventas.
             </li>
             <li>
-              Established release process enabling faster deployments and
-              reliable rollbacks
+            Asegurando precisión y eficiencia en la carga de datos y seguimiento de clientes.
             </li>
             <li>
-              Implementing system-wide monitoring and security improvements
+            Desarrollé comunicación asertiva y habilidades en cierres de ventas, demostrando capacidad para construir relaciones sólidas con los clientes y maximizar los resultados comerciales.
             </li>
           </ul>
         </>
       ),
     },
-    {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: [
-        "Remote",
-        "React",
-        "TypeScript",
-        "Node.js",
-        "GraphQL",
-        "Tailwind CSS",
-      ],
-      title: "Senior Full Stack Developer",
-      logo: ParabolLogo,
-      start: "2021",
-      end: "2024",
-      description: (
-        <>
-          Senior developer and squad leader for an enterprise agile meeting
-          platform.
-          <ul className="list-inside list-disc">
-            <li>
-              Built design system with Tailwind CSS, improving development speed
-              and time to market
-            </li>
-            <li>
-              Implemented engineering practices: PR automation, code review
-              guidelines, and workflows
-            </li>
-            <li>
-              Open source contributions to Relay DevTools and React i18n tooling
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote", "React", "TypeScript", "Node.js", "Android", "Kotlin"],
-      title: "Lead Android Developer → Full Stack Developer",
-      logo: ClevertechLogo,
-      start: "2015",
-      end: "2021",
-      description: (
-        <>
-          Successfully transitioned from mobile to full-stack development while
-          leading distributed teams.
-          <ul className="list-inside list-disc">
-            <li>
-              Led frontend team at Evercast, building real-time platform
-              supporting 30+ users per room with HD streaming and collaboration
-              tools
-            </li>
-            <li>
-              Developed offline-first Android app for DKMS, improving donor
-              registration process
-            </li>
-            <li>
-              Led development teams across multiple successful client projects
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: ["On Site", "Android", "Java", "Kotlin"],
-      title: "Android Developer → Lead Android Developer",
-      logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
-      description: (
-        <>
-          First Android developer, grew and led a team of 15+ engineers while
-          establishing engineering culture.
-          <ul className="list-inside list-disc">
-            <li>
-              Developed apps for major Polish companies including LOT, Polskie
-              Radio, and Agora
-            </li>
-            <li>Built and mentored high-performing mobile development team</li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: ["On Site", "C/C++", "LTE", "Agile"],
-      title: "C/C++ Developer",
-      logo: NSNLogo,
-      start: "2010",
-      end: "2012",
-      description:
-        "Developed software for LTE base stations at enterprise scale, gaining strong fundamentals in software architecture, testing practices, and cross-team collaboration.",
-    },
+    
   ],
   skills: [
-    "React/Next.js/Remix",
-    "TypeScript",
-    "Tailwind CSS",
-    "Design Systems",
-    "WebRTC",
-    "WebSockets",
+    "HTML",
+    "JavaScript",
+    "CSS",
+    "Sass",
+    "React",
     "Node.js",
-    "GraphQL",
-    "Relay",
+    "MongoDB",
+    "Git",
+    "Docker",
+    "Design Systems",
     "System Architecture",
-    "Remote Team Leadership",
+
   ],
   projects: [
     {
-      title: "Monito",
-      techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
-      description:
-        "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
-      logo: MonitoLogo,
-      link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
-      },
-    },
-    {
-      title: "Consultly",
-      techStack: [
-        "TypeScript",
-        "Next.js",
+      title: "Rita Cosmetica Natural",
+      techStack: ["JavaScript",
+        "HTML",
+        "Sass",
+        "React",
         "Vite",
-        "GraphQL",
-        "WebRTC",
-        "Tailwind CSS",
-        "PostgreSQL",
-        "Redis",
-      ],
+        "MongoDB",
+        "Github Actions",],
       description:
-        "Platform for online consultations with real-time video meetings and scheduling",
-      logo: ConsultlyLogo,
+        "En un proyecto reciente, desarrollé un e-commerce enfocado en cosmética natural. Implementé funcionalidades interactivas como un carrito de compras dinámico y filtros de productos. Además, cree componentes reutilizables y para mejorar la experiencia del usuario, optimizando la carga de las páginas mediante el renderizado condicional.",
       link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
+        label: "rita-cosmeticos.com",
+        href: "https://rita-cosmeticos-3.netlify.app/",
       },
     },
-    {
-      title: "Minimalist CV",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
-      description:
-        "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
-      logo: MonitoLogo,
-      link: {
-        label: "Minimalist CV",
-        href: "https://github.com/BartoszJarocki/cv",
-      },
-    },
+    
   ],
 } as const;

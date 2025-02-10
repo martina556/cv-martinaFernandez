@@ -23,7 +23,7 @@ export class Contact {
 
 @ObjectType()
 export class Education {
-  @Field(() => String)
+  @Field(() => String) 
   school: string;
 
   @Field(() => String)
@@ -106,9 +106,6 @@ export class Me {
 
   @Field(() => String)
   avatarUrl: string;
-
-  @Field(() => String)
-  personalWebsiteUrl: string;
 
   @Field(() => Contact)
   contact: Contact;

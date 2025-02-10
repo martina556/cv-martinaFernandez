@@ -59,17 +59,15 @@ function WorkPeriod({ start, end }: WorkPeriodProps) {
 
 interface CompanyLinkProps {
   company: WorkExperience["company"];
-  link: WorkExperience["link"];
 }
 
 /**
  * Renders company name with optional link
  */
-function CompanyLink({ company, link }: CompanyLinkProps) {
+function CompanyLink({ company }: CompanyLinkProps) {
   return (
     <a
       className="hover:underline"
-      href={link}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`${company} company website`}
@@ -88,14 +86,13 @@ interface WorkExperienceItemProps {
  * Handles responsive layout for badges (mobile/desktop)
  */
 function WorkExperienceItem({ work }: WorkExperienceItemProps) {
-  const { company, link, badges, title, start, end, description } = work;
+  const { company, badges, title, start, end, description } = work;
 
   return (
     <Card className="py-1 print:py-0">
       <CardHeader className="print:space-y-1">
         <div className="flex items-center justify-between gap-x-2 text-base">
           <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none print:text-sm">
-            <CompanyLink company={company} link={link} />
             <BadgeList
               className="hidden gap-x-1 sm:inline-flex"
               badges={badges}
@@ -136,7 +133,7 @@ export function WorkExperience({ work }: WorkExperienceProps) {
   return (
     <Section>
       <h2 className="text-xl font-bold" id="work-experience">
-        Work Experience
+        Experiencia Laboral
       </h2>
       <div className="space-y-4 print:space-y-0" role="feed" aria-labelledby="work-experience">
         {work.map((item) => (
