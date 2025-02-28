@@ -29,7 +29,7 @@ jobs:
 
       - name: Update K3s Deployment
         run: |
-          IMAGE_NAME="lucasmaraz/martinafernandez
+          IMAGE_NAME="lucasmaraz/martinafernandez"
           kubectl set image deployment/martinafernandez-deployment martinafernandez=ghcr.io/$IMAGE_NAME:latest -n default
           kubectl rollout status deployment/martinafernandez-deployment -n default
 
