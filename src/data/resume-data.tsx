@@ -47,6 +47,12 @@ Me considero una persona comprometida, con una gran capacidad de aprendizaje y u
       start: "Febrero 2024",
       end: "Octubre 2024",
     },
+    {
+      school: "Universidad de Buenos Aires",
+      degree: "Licenciatura en Ciencias de la Computación",
+      start: "2025",
+      end: "2030",
+    },
   ],
   work: [
     {
