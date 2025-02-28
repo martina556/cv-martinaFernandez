@@ -86,6 +86,8 @@ Me considero una persona comprometida, con una gran capacidad de aprendizaje y u
     "Docker",
     "Design Systems",
     "System Architecture",
+    "CI/CD",
+    "k8s",
 
   ],
   projects: [
@@ -102,7 +104,7 @@ Me considero una persona comprometida, con una gran capacidad de aprendizaje y u
         "En un proyecto reciente, desarrollé un e-commerce enfocado en cosmética natural. Implementé funcionalidades interactivas como un carrito de compras dinámico y filtros de productos. Además, cree componentes reutilizables y para mejorar la experiencia del usuario, optimizando la carga de las páginas mediante el renderizado condicional.",
       link: {
         label: "rita-cosmeticos.com",
-        href: "https://rita-cosmeticos-3.netlify.app/",
+        href: "https://rita.martinafernandez.com/",
       },
     },
     
