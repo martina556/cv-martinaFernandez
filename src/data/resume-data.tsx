@@ -94,6 +94,7 @@ Me considero una persona comprometida, con una gran capacidad de aprendizaje y u
     "System Architecture",
     "CI/CD",
     "k8s",
+    "SQL",
 
   ],
   projects: [
